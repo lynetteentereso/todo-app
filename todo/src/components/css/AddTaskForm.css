@@ -1,0 +1,65 @@
+.addtask-wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .err-msg{
+      display: flex;
+      color: rgb(250, 74, 74);
+      align-items: flex-start;
+      margin-left: 20px;
+  }
+  .add-form{
+    margin: 5px auto;
+    display: flex;
+  }
+  .form-input{
+    width: 270px !important;
+    border-color: indigo !important;
+  }
+  .submit-btn{
+    margin-left: 1px;
+    width: 70px;
+    background-color: rgb(134, 217, 255) !important;
+    border-color: rgb(134, 217, 255) !important;
+    color: indigo !important;
+  }
+
+  /* Media Queries Default: Medium to Large Mobile Devices */
+
+@media only screen and (max-width: 320px){
+    .form-input{
+      width: 240px !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+    .add-form{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-input{
+        width: 55% !important;
+    }
+    .submit-btn{
+        height: 47px;
+        width: 10%;
+    }
+    .err-msg{
+        margin-left: 140px;
+    }
+  } 
+
+  @media only screen and (min-width: 1200px){
+    .form-input{
+        width: 30% !important;
+    }
+    .submit-btn{
+        height: 47px;
+        width: 5%;
+    }
+    .err-msg{
+        margin-left: 400px;
+    }
+}
