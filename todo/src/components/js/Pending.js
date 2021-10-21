@@ -11,7 +11,7 @@ const Pending = () => {
     return (
         <div>
             {
-                 (todos.filter(todo => todo.status === 'pending')).length === 0 ? <p style={{color: `rgb(250, 74, 74)`, margin:`20px`}}>You have no Pending tasks</p> : todos.filter(todo => todo.status === 'pending').map( todo => 
+                 (todos.filter(todo => todo.status === 'pending')).length === 0 ? <p className='task-err-msg'>You have no Pending tasks</p> : todos.filter(todo => todo.status === 'pending').map( todo => 
                     <div className='task-container'>
                         { todo.name }
                         <div className='task-actions'>

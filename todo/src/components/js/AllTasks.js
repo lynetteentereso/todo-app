@@ -10,9 +10,9 @@ const AllTasks = () => {
     const dispatch = useDispatch();
 
     return(
-        <>
+        <div>
             {
-                todos.length === 0 ? <p style={{color: `rgb(250, 74, 74)`, margin:`20px`}}>You have no tasks</p>: todos.map( todo => 
+                todos.length === 0 ? <p className='task-err-msg'>You have no tasks</p> : todos.map( todo => 
                     <div className='task-container'>
                         { todo.name }
                         <div className='task-actions'>
@@ -24,7 +24,7 @@ const AllTasks = () => {
                     </div>
                 )
             }            
-        </>
+        </div>
     );
 };
 

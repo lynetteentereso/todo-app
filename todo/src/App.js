@@ -3,7 +3,7 @@ import AllTasks from './components/js/AllTasks';
 import AddTaskForm from './components/js/AddTaskForm';
 import Pending from './components/js/Pending';
 import Done from './components/js/Done';
-import { Link, Switch, Route } from 'react-router-dom';
+import { NavLink, Switch, Route } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './App.css';
 
@@ -11,15 +11,15 @@ const App = () => {
 
   return (
     <div className='main-wrapper'>
-      <Navbar className='nav-wrapper ' expand="lg">
+      <Navbar className='nav-wrapper ' expand='lg'>
         <Container className='mynav'>
-          <Navbar.Brand className='brand '><Link to='/'>To Do</Link></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav " />
-          <Navbar.Collapse className='mynav-collapse' id="basic-navbar-nav ">
-            <Nav className="me-auto ">
-              <Nav.Link ><Link to='/all'>All</Link></Nav.Link>
-              <Nav.Link ><Link to='/'>Pending</Link></Nav.Link>
-              <Nav.Link ><Link to='/done'>Done</Link></Nav.Link>
+          <Navbar.Brand className='brand'>To Do</Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav ' />
+          <Navbar.Collapse className='mynav-collapse' id='basic-navbar-nav '>
+            <Nav className='me-auto '>
+              <Nav.Link ><NavLink to='/all' activeClassName='active'>All</NavLink></Nav.Link>
+              <Nav.Link ><NavLink  exact to='/' activeClassName='active' >Pending</NavLink></Nav.Link>
+              <Nav.Link ><NavLink to='/done' activeClassName='active'>Done</NavLink></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,5 +1,6 @@
 .addtask-wrapper{
-    margin-top: 50px;
+    margin: 50px auto;
+    width: 85%;
     display: flex;
     flex-direction: column;
   }
@@ -7,59 +8,104 @@
       display: flex;
       color: rgb(250, 74, 74);
       align-items: flex-start;
-      margin-left: 20px;
+      margin-left: 10px;
   }
   .add-form{
-    margin: 5px auto;
+    margin: 5px 0;
     display: flex;
+    justify-content: center;
   }
   .form-input{
-    width: 270px !important;
+    width: 265px !important;
     border-color: indigo !important;
   }
   .submit-btn{
-    margin-left: 1px;
-    width: 70px;
+    margin-left: 1px ;
+    width: 80px;
     background-color: rgb(134, 217, 255) !important;
     border-color: rgb(134, 217, 255) !important;
     color: indigo !important;
   }
 
-  /* Media Queries Default: Medium to Large Mobile Devices */
+  /* Media Queries Default: Large Mobile Phones */
 
-@media only screen and (max-width: 320px){
-    .form-input{
-      width: 240px !important;
+@media only screen and (max-width: 375px){
+    .addtask-wrapper{
+        width: 97%;
+        margin: 50px auto;
     }
+    
   }
 
   @media only screen and (min-width: 768px){
     .add-form{
-        width: 100%;
+        width: 90%;
+        margin: 50px auto 5px auto;
         justify-content: center;
         align-items: center;
     }
     .form-input{
-        width: 55% !important;
+        width: 74% !important;
+    }
+    .submit-btn{
+        height: 47px;
+        width: 12%;
+    }
+    .err-msg{
+        margin-left: 12%;
+    }
+  } 
+
+  @media only screen and (min-width: 1024px){
+    .err-msg{
+        margin-left: 12%;
+    }
+  }
+  @media only screen and (min-width: 1200px){
+    .add-form{
+        width: 100%;
+    }
+    .form-input{
+        width: 66% !important;
     }
     .submit-btn{
         height: 47px;
         width: 10%;
     }
     .err-msg{
-        margin-left: 140px;
+        margin-left: 12%;
     }
-  } 
-
-  @media only screen and (min-width: 1200px){
+    
+}
+    @media only screen and (min-width: 1400px){
+        .add-form{
+            width: 80%;
+        }
+        .form-input{
+            width: 86% !important;
+        }
+        .submit-btn{
+            height: 47px;
+            width: 10%;
+        }
+        .err-msg{
+            margin-left: 12%;
+        }
+        
+}
+@media only screen and (min-width: 2560px){
+    .add-form{
+        width: 48%;
+    }
     .form-input{
-        width: 30% !important;
+        width: 64% !important;
     }
     .submit-btn{
         height: 47px;
-        width: 5%;
+        width: 10%;
     }
     .err-msg{
-        margin-left: 400px;
+        margin-left: 32.5%;
     }
+    
 }
